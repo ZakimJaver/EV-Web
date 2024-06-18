@@ -9,11 +9,15 @@
 
 /* Menu Card */
 .menu-card {
- @apply flex justify-center items-center box-border  border-2 border-black bg-white hover:bg-black text-black hover:text-white;
+ @apply flex justify-center items-center box-border text-3xl font-black border-2 border-black bg-white hover:bg-black text-black hover:text-white;
 }
 
-/*
-for meny card
-items-center box-border  border-2 border-black bg-white hover:bg-black text-black hover:text-white
-items-center box-border  border-2 border-black bg-white hover:bg-black text-black hover:text-white
-*/
+/* font */
+@font-face {
+  font-family: titilliumWeb;
+  src: url(/font/TitilliumWeb-Black.ttf);
+}
+.titilliumWeb{
+  font-family: titilliumWeb;
+}
+
