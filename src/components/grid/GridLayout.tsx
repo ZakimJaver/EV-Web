@@ -1,4 +1,5 @@
 import MenuCard from "../shared/MenuCard"
+import TopMenuBar from "../shared/TopMenuBar"
 
 type GridLayoutProps = {
     items: RoutePaths[]
@@ -12,10 +13,8 @@ type RoutePaths = {
 const GridLayout = ({ items }: GridLayoutProps) => {
     if (!items) return
     return (
-        <div className="flex flex-col h-screen w-screen titilliumWeb">
-            <div className="h-16 bg-black">
-                <h1 className="text-white ">Menu Items</h1>
-            </div>
+        <div className="home-container">
+            <TopMenuBar />
             <div className='grid-container'>
                 {items?.map((item: RoutePaths) => {
                     return (

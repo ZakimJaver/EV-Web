@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Page Container */
+.home-container {
+  @apply flex flex-col h-screen w-screen titilliumWeb;
+}
+
 /* grid container */
 .grid-container {
   @apply grid grid-cols-3 bg-white gap-8 h-full w-full px-10 py-8;
@@ -9,7 +14,23 @@
 
 /* Menu Card */
 .menu-card {
- @apply flex justify-center items-center box-border text-3xl font-black border-2 border-black bg-white hover:bg-black text-black hover:text-white;
+ @apply flex justify-center items-center box-border text-3xl font-black border border-black bg-white hover:bg-black text-black hover:text-white;
+}
+
+/* Top menu bar */
+.top-menu-bar {
+  @apply flex gap-3 h-16 bg-black ;
+}
+.top-menu-bar-title {
+  @apply flex flex-1 justify-center items-center text-3xl font-bold uppercase text-white bg-black;
+}
+.top-menu-icon{
+  @apply filter-white absolute ml-8 mt-3 w-12 h-10;
+}
+
+/* SVG Icon color switch to White*/
+.filter-white{
+  filter: invert(99%) sepia(93%) saturate(3%) hue-rotate(252deg) brightness(107%) contrast(100%);
 }
 
 /* font */
