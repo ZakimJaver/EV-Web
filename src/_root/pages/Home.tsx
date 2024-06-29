@@ -1,8 +1,11 @@
-import React from 'react'
+import GridLayout from '@/components/grid/GridLayout'
+import { toolLinks } from '@/constants'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='h-full w-full'>
+      <GridLayout items={toolLinks} />
+    </div>
   )
 }
 

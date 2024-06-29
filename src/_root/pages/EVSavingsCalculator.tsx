@@ -2,7 +2,7 @@ import React from 'react'
 
 const EVSavingsCalculator = () => {
   return (
-    <div>EVSavingsCalculator</div>
+    <div className='h-full w-full'>EVSavingsCalculator</div>
   )
 }
 

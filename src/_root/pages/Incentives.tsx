@@ -2,7 +2,7 @@ import React from 'react'
 
 const Incentives = () => {
   return (
-    <div>Incentives</div>
+    <div className='h-full w-full'>Incentives</div>
   )
 }
 

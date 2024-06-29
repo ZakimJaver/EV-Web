@@ -2,7 +2,7 @@ import React from 'react'
 
 const SustainabilityTracker = () => {
   return (
-    <div>SustainabilityTracker</div>
+    <div className='h-full w-full'>SustainabilityTracker</div>
   )
 }
 

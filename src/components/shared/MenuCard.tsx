@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom"
+
 type MenuCardProps = {
     route: String,
     label: String
 }
+
 const MenuCard = ({ route, label }: MenuCardProps) => {
 
-    if (!label) return
+    if (!label || !route) return
 
     return (
-        <div className="menu-card">
+        <Link to={`${route}`} className="menu-card hover:animate-pulse">
             <h1>{label}</h1>
-        </div>
+        </Link>
     )
 }
 

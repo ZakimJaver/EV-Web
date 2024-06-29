@@ -2,7 +2,7 @@ import React from 'react'
 
 const Browser = () => {
   return (
-    <div>EV Browser</div>
+    <div className='h-full w-full'>EV Browser</div>
   )
 }
 

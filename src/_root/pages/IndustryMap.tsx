@@ -1,9 +1,9 @@
 import React from 'react'
 
-const IndustryMap = () => {
+ const IndustryMap = () => {
   return (
-    <div>IndustryMap</div>
+    <div className='h-full w-full'>IndustryMap</div>
   )
 }
 
-export default IndustryMap
+export  default IndustryMap
