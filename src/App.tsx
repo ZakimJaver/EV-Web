@@ -5,6 +5,7 @@ import { Browser, Home, Incentives, IndustryMap, ServiceProvider, Sustainability
 import AuthLayout from './_auth/AuthLayout'
 import RootLayout from './_root/RootLayout'
 import EVSavingsCalculator from './_root/pages/EVSavingsCalculator'
+import { About, Contact, Login } from './_root/pages/menuPages'
 
 const App = () => (
     <main className='flex h-screen'>
@@ -16,6 +17,9 @@ const App = () => (
                 <Route path="/industry-map" element={<IndustryMap />} />
                 <Route path="/service-provider" element={<ServiceProvider />} />
                 <Route path="/sustainability-tracker" element={<SustainabilityTracker />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/login" element={<Login />} />
                 <Route index element={<Home />} />
             </Route>
 

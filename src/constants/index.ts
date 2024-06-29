@@ -24,3 +24,22 @@ export const toolLinks = [
         label: "Sustainability Tracker"
     },
 ]
+
+export const menuLinks = [
+    {
+        route: "/login",
+        label: "Login"
+    },
+    {
+        route: "/about",
+        label: "About"
+    },
+    {
+        route: "/",
+        label: "Tools"
+    },
+    {
+        route: "/contact",
+        label: "Contact"
+    },
+]

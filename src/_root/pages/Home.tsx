@@ -4,7 +4,6 @@ import { toolLinks } from '@/constants'
 const Home = () => {
   return (
     <div className='h-full w-full'>
-
       <GridLayout items={toolLinks} />
     </div>
   )
