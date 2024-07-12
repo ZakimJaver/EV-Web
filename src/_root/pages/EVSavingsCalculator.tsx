@@ -52,8 +52,8 @@ function EVSavingsCalculator() {
         <div className="form-wrapper-title-container title-text">Header</div>
         <div className="form-wrapper-content-container">content</div>
         <div className="form-wrapper-button-container">
-          <div>Back</div>
-          <div>Next</div>
+          <div className="form-button-container">Back</div>
+          <div className="form-button-container">Next</div>
         </div>
       </form>
     </div>
