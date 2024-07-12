@@ -1,4 +1,3 @@
-import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import "./global.css"
 import { Browser, Home, Incentives, IndustryMap, ServiceProvider, SustainabilityTracker } from './_root/pages'

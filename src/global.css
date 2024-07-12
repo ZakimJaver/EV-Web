@@ -51,6 +51,33 @@
   @apply text-3xl font-bold uppercase text-white bg-black;
 }
 
+/* EV savings calculator form */
+.ev-savings-calculator-container{
+  @apply  bg-yellow-500  w-full h-full p-1;
+}
+
+.form-wrapper-container{
+  @apply flex flex-col w-full h-full bg-blue-500;
+}
+
+.form-wrapper-title-container{
+  @apply flex items-center justify-center bg-red-500 w-full grow;
+}
+
+.form-wrapper-content-container{
+  @apply flex items-center justify-center bg-green-500 w-full h-60 grow-[8];
+}
+
+.form-wrapper-button-container{
+  @apply flex items-center justify-around gap-2  w-full h-28 grow bg-purple-300; 
+}
+
+
+/* Title 3xl size */
+.title-text{
+  @apply text-3xl font-black titilliumWeb
+}
+
 /* SVG Icon color switch to White*/
 .filter-white {
   filter: invert(99%) sepia(93%) saturate(3%) hue-rotate(252deg) brightness(107%) contrast(100%);
