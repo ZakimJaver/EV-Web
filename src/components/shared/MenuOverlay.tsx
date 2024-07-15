@@ -21,8 +21,8 @@ const MenuOverlay = ({ navbarOpen, setNavbarOpen }: MenuOverlayProps) => {
             <ul className="w-full flex flex-col items-start">
                 {menuLinks.map((item: RoutePaths) => {
                     return (
-                        <li className="nav-li">
-                            <div className="w-full bg-red"></div>
+                        <li className="nav-li" key={item.label}>
+                            <div className="w-full"></div>
                             <div className="w-full bg-red h-full">
                                 <Link 
                                 to={`${item.route}`} 
