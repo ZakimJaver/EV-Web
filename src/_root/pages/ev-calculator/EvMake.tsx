@@ -1,5 +1,4 @@
 import Grid3x3Scrollable from "@/components/grid/Grid3x3Scrollable"
-import { FormWrapper } from "./FormWrapper"
 
 type EvMakeData = {
   evType: string
@@ -22,7 +21,6 @@ export function EvMake({
 
 
   function updateEvType(updatedValue: string){
-    console.log("updated from EvMake: " + updatedValue)
     updateFields({evType: updatedValue})
   }
 

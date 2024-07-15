@@ -18,7 +18,6 @@ export function useMultistepForm(steps: MultistepFormProp[]) {
     function back() {
         setCurrentStepIndex(i => {
             if (i <= 0) return i
-            console.log("Back Clicked: " + i)
             return i - 1
         })
     }

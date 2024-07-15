@@ -2,11 +2,11 @@ import { useState, FormEvent } from "react"
 import { useMultistepForm } from "./ev-calculator/useMultistepForm"
 import { EvMake } from "./ev-calculator/EvMake"
 import { Button } from "@/components/ui/button"
-import { TestC } from "./ev-calculator/TestC"
+import { EvMileage } from "./ev-calculator/EvMileage"
 
 type FormData = {
   evType: string
-  lastName: string
+  annualMileage: number
   age: string
   street: string
   city: string
@@ -18,7 +18,7 @@ type FormData = {
 
 const INITIAL_DATA: FormData = {
   evType: "",
-  lastName: "",
+  annualMileage: 15000,
   age: "",
   street: "",
   city: "",
@@ -38,16 +38,16 @@ function EVSavingsCalculator() {
     })
   }
 
-  const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
+  const { step, isFirstStep, isLastStep, back, next } =
     useMultistepForm([
-      {title: "Test", element: <EvMake {...data} updateFields={updateFields} /> },
-      {title: "TS", element: <TestC {...data} updateFields={updateFields} />},
+      {title: "Select EV Make", element: <EvMake {...data} updateFields={updateFields} /> },
+      {title: "Select Annual Mileage", element: <EvMileage {...data} updateFields={updateFields} />},
     ])
 
   function onSubmit(e: FormEvent) {
     e.preventDefault()
     if (!isLastStep) return next()
-    alert(`Successful Account Creation ${data.evType} 2: ${data.lastName}`)
+    alert(`Successful Account Creation ${data.evType} 2: ${data.annualMileage}`)
   }
 
   return (
