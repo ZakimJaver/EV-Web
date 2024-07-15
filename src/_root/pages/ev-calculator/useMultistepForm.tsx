@@ -1,6 +1,11 @@
 import { ReactElement, useState } from "react";
 
-export function useMultistepForm(steps: ReactElement[]) {
+type MultistepFormProp = {
+    title: string,
+    element: ReactElement,
+}
+
+export function useMultistepForm(steps: MultistepFormProp[]) {
     const [currentStepIndex, setCurrentStepIndex] = useState(0)
 
     function next() {
@@ -13,6 +18,7 @@ export function useMultistepForm(steps: ReactElement[]) {
     function back() {
         setCurrentStepIndex(i => {
             if (i <= 0) return i
+            console.log("Back Clicked: " + i)
             return i - 1
         })
     }

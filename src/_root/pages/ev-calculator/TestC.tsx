@@ -2,7 +2,7 @@ import Grid3x3Scrollable from "@/components/grid/Grid3x3Scrollable"
 import { FormWrapper } from "./FormWrapper"
 
 type EvMakeData = {
-  evType: string
+  lastName: string
 }
 
 type EvMakeDataProps = EvMakeData & {
@@ -15,19 +15,19 @@ const evTypes: string[] = [
 
 
 
-export function EvMake({
-  evType,
+export function TestC({
+  lastName,
   updateFields
 }: EvMakeDataProps) {
 
 
   function updateEvType(updatedValue: string){
     console.log("updated from EvMake: " + updatedValue)
-    updateFields({evType: updatedValue})
+    updateFields({lastName: updatedValue})
   }
 
 
   return (
-    <Grid3x3Scrollable selectedData={evType} data={evTypes} updateFields={updateEvType} />
+    <Grid3x3Scrollable selectedData={lastName} data={evTypes} updateFields={updateEvType} />
   )
 }
